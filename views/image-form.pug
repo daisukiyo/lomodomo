@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  h1 Upload Image
+
+  form(method='POST' action='/image')
+    //- name
+    div.form-group
+        label(for='name') Name:
+        input(type='text', name='name')
+
+    //- camera
+    div.form-group
+        label(for='camera') Camera:
+        input(type='text', name='camera')
+
+    //- lens
+    div.form-group
+        label(for='lens') Lens:
+        input(type='text', name='lens')
+
+    //- film
+    div.form-group
+        label(for='film') Film:
+        input(type='text', name='film')
+
+    //- image
+    div.form-group
+        input(type='url', name='image', pattern="https://imgur.com/a/.*")
+
+    button(type='submit') Submit
