@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  
+  .grid(data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 155, "fitWidth": true}')
+    for image in images
+      .grid-item
+        img(src=image.image)
+        
+    //- p #{image.camera}
