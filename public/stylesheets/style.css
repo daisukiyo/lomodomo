@@ -10,3 +10,7 @@ a {
 img {
   width: 300px;
 }
+
+.grid {
+  margin: 0 auto;
+}
