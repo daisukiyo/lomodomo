@@ -1,7 +1,20 @@
 extends layout
 
 block content
-  
+  .navbar
+    header.header
+      a.logo#logo(href='/') LomoDomo
+      input#menu-btn.menu-btn(type='checkbox')
+      label.menu-icon(for='menu-btn')
+        span.navicon
+      ul.menu
+        li
+          a(href='#') About
+        li
+          a(href='#') Login
+        li
+          a(href='#') Signup
+
   .grid(data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 151.5, "fitWidth": true, "transitionDuration": "0.4s"}')
     for image in images
       .grid-item
