@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .grid(data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 151.5, "fitWidth": true, "transitionDuration": "0.4s"}')
+  .grid
     for image in images
       .grid-item
         a(href=`/image/${image._id}`)
