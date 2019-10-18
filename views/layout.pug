@@ -4,7 +4,6 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1">
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
   body
     .navbar
       header.header
@@ -19,4 +18,10 @@ html
             a(href='#') Login
     block content
     
+    //- Masonry
+    script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
     
+    //- Imagesloaded
+    script(src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js')
+    
+    script(src='/javascripts/masonry.js')
