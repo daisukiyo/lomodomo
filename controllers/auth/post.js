@@ -7,7 +7,7 @@ module.exports.postUser = async (req, res) => {
         const user = await User.create(req.body);
         var token = jwt.sign({ _id: user._id }, process.env.SECRET, { expiresIn: "60 days" });
         res.cookie('nToken', token, { maxAge: 900000, httpOnly: true });
-        res.send(200);
+        res.render('images-index');
     }
     catch(error) {
         console.log(error);
