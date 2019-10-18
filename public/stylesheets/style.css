@@ -308,6 +308,15 @@ button {
   margin-bottom: 5px;
 }
 
+.about {
+  max-width: 50%;
+  border: 1px solid #fff;
+  padding: 25px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 .unselectable {
   -webkit-touch-callout: none;
