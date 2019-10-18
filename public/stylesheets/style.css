@@ -1,16 +1,20 @@
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100i,400&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300&display=swap');
-body {
+body, html {
   font: 14px "Open Sans", sans-serif;
+  color: #fff;
   margin: 0px;
+  height: 100%;
+  background-color: #121212;
 }
 
 a {
-  color: #373D3F;
+  color: #fff;
 }
 
 img {
-  width: 300px;
+  width: 280px;
+  border: 8px solid white;
 }
 
 .grid {
@@ -23,7 +27,27 @@ img {
   font-size: 32px;
   letter-spacing: -2px;
   text-decoration: none;
-  color: #373D3F;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.upload {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#upload-form {
+  display: grid;
+  width: 500px;
 }
 
 * {
@@ -31,13 +55,12 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.navbar{
-  height: 10vh;
-}
-
 .header {
-  background-color: #ffffff;
+  background-color: #121212;
+  /* Testing */
   position: fixed;
+  /* display: flex;
+  justify-content: space-between; */
   width: 100%;
   z-index: 3;
 }
@@ -47,7 +70,7 @@ img {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fffffffff;
+  background-color: #121212;
 }
 
 .header li a {
@@ -58,7 +81,7 @@ img {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #080808;
 }
 
 .header .logo {
@@ -89,7 +112,7 @@ img {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: 2px;
   position: relative;
@@ -99,7 +122,7 @@ img {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
@@ -166,7 +189,7 @@ img {
 /* section */
 
 .section {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: auto;
   max-width: 1400px;
 }
@@ -183,7 +206,7 @@ img {
 }
 
 .section a span {
-  color: #ffffff;
+  color: #121212;
   position: absolute;
   left: 5%;
   bottom: 5%;
@@ -206,4 +229,23 @@ img {
   .section-split a {
     width: 50%;
   }
+}
+
+/*  ew this is bad */
+.navbar{
+  height: 59px;
+}
+
+#single-display{
+  height: 0px;
+}
+
+.display{
+  max-height: 80%;
+  max-width: 80%;
+  width: auto;
+}
+
+.grid-item{
+  margin-bottom: 5px;
 }
