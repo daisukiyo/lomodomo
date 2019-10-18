@@ -10,6 +10,7 @@ var imageRouter = require('./routes/image');
 
 var app = express();
 
+require('dotenv').config();
 require('./data/lomodomo-db');
 
 
