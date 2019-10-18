@@ -2,6 +2,11 @@ extends layout
 
 block content
   .container
-    img.display(src=image.image)
+    .left
+      img.display(src=image.image)
+    .right
+      h1 #{image.name}
+      p #{image.camera} | #{image.film}
+    
 
   script(src='/javascripts/main.js')
