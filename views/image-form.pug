@@ -1,31 +1,28 @@
 extends layout
 
 block content
-  h1 Upload Image
+  .container
+    form#upload-form(method='POST' action='/image')
+        h1.upload Upload Image
 
-  form(method='POST' action='/image')
-    //- name
-    div.form-group
+        //- name
         label(for='name') Name:
         input(type='text', name='name')
 
-    //- camera
-    div.form-group
+        //- camera
         label(for='camera') Camera:
         input(type='text', name='camera')
 
-    //- lens
-    div.form-group
+        //- lens
         label(for='lens') Lens:
         input(type='text', name='lens')
 
-    //- film
-    div.form-group
+        //- film
         label(for='film') Film:
         input(type='text', name='film')
 
-    //- image
-    div.form-group
+        //- image
+        label(for='image') Image:
         input(type='url', name='image', pattern="https://i.imgur.com/.*")
 
-    button(type='submit') Submit
+        button(type='submit') Submit
