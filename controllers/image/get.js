@@ -1,7 +1,8 @@
 const Image = require('../../models/image');
 
 module.exports.newImage = function(req, res) {
-    res.render('image-form');
+    var currentUser = req.user;
+    res.render('image-form', { currentUser });
     
     // res.send('respond with a resource');
 }

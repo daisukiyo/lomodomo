@@ -7,9 +7,10 @@ router.get('/',  async function(req, res, next) {
   // res.render('index', { title: 'Lomodomo' });
 
   try {
+    var currentUser = req.user;
     Image.find({})
       .then(images => {
-        res.render('images-index', { images });
+        res.render('images-index', { images, currentUser });
       })
   }
   catch(error) {

@@ -9,5 +9,6 @@ module.exports.userLogout = function (req, res) {
 }
 
 module.exports.userLogin = function (req, res) {
-    res.render('login')
+    var currentUser = req.user;
+    res.render('login', { currentUser })
 }
