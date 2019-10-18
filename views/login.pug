@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        form#upload-form(method='POST' action='/users/login')
+            h1.upload Login
+
+            //- user
+            label(for='username') User:
+            input(type='text', name='username')
+
+            //- pass
+            label(for='password') Pass:
+            input(type='text', name='password')
+
+            button(type='submit') Sign Up
