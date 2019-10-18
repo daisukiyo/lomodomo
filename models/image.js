@@ -13,7 +13,7 @@ const ImageSchema = new Schema({
 ImageSchema.pre('save', function(next) {
     const now = new Date();
     if (!this.createdAt) {
-        this.createdAt= now;
+        this.createdAt = now;
     }
 
     next();
