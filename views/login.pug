@@ -2,15 +2,16 @@ extends layout
 
 block content
     .container
+        //- h1.upload Login
         form#upload-form(method='POST' action='/users/login')
-            h1.upload Login
+            h1.form-header Login
 
             //- user
-            label(for='username') User:
-            input(type='text', name='username')
+            input(type='text', name='username', placeholder='user')
+            //- label.floating-label(for='username') User:
 
             //- pass
-            label(for='password') Pass:
-            input(type='text', name='password')
+            input(type='password', name='password', placeholder='pass')
+            //- label.floating-label(for='password') Pass:
 
-            button(type='submit') Sign Up
+            button(type='submit') login

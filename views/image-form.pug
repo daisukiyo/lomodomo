@@ -6,23 +6,23 @@ block content
         h1.upload Upload Image
 
         //- name
-        label(for='name') Name:
-        input(type='text', name='name')
+        //- label(for='name') Name:
+        input(type='text', name='name', placeholder='name')
 
         //- camera
-        label(for='camera') Camera:
-        input(type='text', name='camera')
+        //- label(for='camera') Camera:
+        input(type='text', name='camera', placeholder='camera*')
 
         //- lens
-        label(for='lens') Lens:
-        input(type='text', name='lens')
+        //- label(for='lens') Lens:
+        input(type='text', name='lens', placeholder='lens')
 
         //- film
-        label(for='film') Film:
-        input(type='text', name='film')
+        //- label(for='film') Film:
+        input(type='text', name='film', placeholder='film')
 
         //- image
-        label(for='image') Image:
-        input(type='url', name='image', pattern="https://i.imgur.com/.*")
+        //- label(for='image') Image:
+        input(type='url', name='image', pattern="https://i.imgur.com/.*", placeholder='image url*')
 
-        button(type='submit') Submit
+        button(type='submit') submit
