@@ -3,7 +3,7 @@ var router = express.Router();
 const Image = require('../models/image')
 
 /* GET home page. */
-router.get('/',  async function(req, res, next) {
+router.get('/', async function(req, res, next) {
   // res.render('index', { title: 'Lomodomo' });
 
   try {
@@ -19,5 +19,10 @@ router.get('/',  async function(req, res, next) {
   }
   
 });
+
+router.get('/about', function(req, res) {
+  var currentUser = req.user;
+  res.render('about', { currentUser })
+})
 
 module.exports = router;
