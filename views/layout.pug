@@ -12,12 +12,19 @@ html
         label.menu-icon(for='menu-btn')
           span.navicon
         ul.menu
-          li
-            a(href='#') About
-          li
-            a(href='users/login') Login
-          li
-            a(href='/users/logout') Logout
+          if currentUser
+            li
+              a(href='#') Upload
+            li
+              a(href='#') About
+            li
+              a(href='/users/logout') Logout
+          else
+            li
+              a(href='#') About
+            li
+              a(href='/users/login') Login
+          
       
     block content
     
