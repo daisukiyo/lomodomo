@@ -1,21 +1,7 @@
 extends layout
 
 block content
-  .navbar#single-display
-    header.header
-      a.logo#logo(href='/') LomoDomo
-      input#menu-btn.menu-btn(type='checkbox')
-      label.menu-icon(for='menu-btn')
-        span.navicon
-      ul.menu
-        li
-          a(href='#') About
-        li
-          a(href='#') Login
-
   .container
     img.display(src=image.image)
-        
-    //- p #{image.camera}
 
   script(src='/javascripts/main.js')

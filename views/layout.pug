@@ -1,8 +1,22 @@
 doctype html
 html
   head
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
   body
+    .navbar
+      header.header
+        a.logo#logo(href='/') LomoDomo
+        input#menu-btn.menu-btn(type='checkbox')
+        label.menu-icon(for='menu-btn')
+          span.navicon
+        ul.menu
+          li
+            a(href='#') About
+          li
+            a(href='#') Login
     block content
+    
+    
