@@ -53,10 +53,60 @@ img {
   width: 500px;
 }
 
-#upload-form {
-  display: grid;
-  width: 500px;
+
+
+.form-header {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
 }
+
+#upload-form {
+  
+  display: grid;
+  grid-gap: 16px;
+
+  /* width: 500px; */
+}
+
+#upload-form input {
+  background:transparent;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 10px;
+}
+::-moz-placeholder {
+  font-size: 10px;
+}
+:-ms-input-placeholder {
+  font-size: 10px;
+}
+::placeholder {
+  font-size: 10px;
+}
+
+.field {
+  font-size: 16px;
+}
+
 
 * {
   -webkit-font-smoothing: antialiased;
